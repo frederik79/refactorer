@@ -31,9 +31,9 @@ public class WordCount
 			
 			while (tokenizer.hasMoreTokens()) 
 			{
+				String nextToken = tokenizer.nextToken();
 				
-				
-				word.set(tokenizer.nextToken());
+				word.set(nextToken);
 				context.write(word, one);
 			}
 		}
